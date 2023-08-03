@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Converter with Conditional Statement</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script defer src="JS/main.js"></script>
+    <section>
+        <div class="converterContainer">
+            <h3>
+                JS-Length-Converter
+            </h3>
+            <form action="#" method="#">
+                <input type="number" name="input" id="input" placeholder="Input number here">
+                <div class="controlContainer">
+                    <select id="dropdown1">
+                        <option>
+                            Meter
+                        </option>
+                        <option>
+                            Centimeter
+                        </option>
+                        <option>
+                            Kilometer
+                        </option>
+                    </select>
+                    <span>To</span>
+                    <select id="dropdown2">
+                        <option>
+                            Meter
+                        </option>
+                        <option>
+                            Centimeter
+                        </option>
+                        <option>
+                            Kilometer
+                        </option>
+                    </select>
+                </div>
+                <input type="button" class="btn" value="Convert" onclick="convertInput()">
+            </form>
+            <div class="result">
+                <span>Result:</span>
+                <p id="displayResult"></p>
+            </div>
+            <button id="clrBtn" onclick="allClr()">All clear</button>
+        </div>
+    </section>
+</body>
+</html>
